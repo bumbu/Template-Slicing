@@ -1,28 +1,18 @@
-.row{
-  /* Spans */
-  .span1{
+@import "variables.less";
+@import "mixins.less";
+@import "utilities.less";
+@import "responsive-utilities.less";
+@import "grid.less";
 
-  }
-
-  /* Erase paddings */
-  .not-padded{
-
-  }
-}
-
-.site_title{}
-.site_slogan{}
-
-.input-append{
-  input{
-
-  }
-  .add-on{
-
+body{
+  background: @grayDark;
+  .container{
+    background: @white;
+    margin: 0 auto;
   }
 }
 
-.pull-right{}
-.pull-left{}
-
-.nav-utility{}
+header.container{
+  background: url(../img/bg-header.png) 0 0 repeat-x;
+  height:116px;
+}
