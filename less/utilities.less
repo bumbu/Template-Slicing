@@ -29,6 +29,9 @@
   position: fixed;
 }
 
+// General definitions
+// --------------------------------------------------
+
 a{
   cursor: pointer;
 }
@@ -37,6 +40,19 @@ a{
   margin-left: 20px !important;
   margin-right: 20px !important;
 }
+
+.nowrap{
+  white-space:nowrap;
+}
+
+.box{
+  background: #f9f9f8;
+  .border-radius(4px);
+  border-bottom: 1px solid #d5d2ca;
+}
+
+// Icons
+// --------------------------------------------------
 
 .icon{
   display: inline-block;
@@ -57,6 +73,9 @@ a{
     }
   }
 }
+
+// Predefined by template styles
+// --------------------------------------------------
 
 // Navigation
 .nav{
@@ -120,7 +139,7 @@ a.carousel-action{
 }
 
 .subhead{
-  font: 15px/18px @serifFontFamily;
+  font: 14px/18px @sansFontFamily;
   color: @headingsColor;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -133,20 +152,22 @@ a.carousel-action{
   font: 10px @sansFontFamily;
   color: @linkColor;
   text-transform: uppercase;
-  a{
-    text-decoration: none;
+}
+
+a.action,
+.action a{
+  text-decoration: none;
+  color: @linkColor;
+  &:hover{
+    color: @linkColorHover;
+  }
+  &:visited{
     color: @linkColor;
-    &:hover{
-      color: @linkColorHover;
-    }
-    &:visited{
-      color: @linkColor;
-    }
   }
 }
 
 .spotlight-feature{
-  font: 18px/19px @serifFontFamily;
+  font: italic 18px/19px @serifFontFamily;
   color: @linkColor;
   a{
     text-decoration: none;
