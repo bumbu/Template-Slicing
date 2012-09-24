@@ -51,6 +51,7 @@ header.container{
       a{
         background: url('../img/square-orange.gif') 0 50% no-repeat;
         padding-left: 13px;
+        font-family: @sansFontFamily;
         &:before{
           content:"";
           width: 7px;
@@ -58,6 +59,27 @@ header.container{
           display:block;
           background: url('../img/square-orange.gif') 0 0 no-repeat;
         }
+      }
+    }
+  }
+}
+
+#top-navigation{
+  height: 47px;
+  background: url(../img/bg-header.png) 0 -116px repeat-x;
+  nav{
+    text-align: center;
+    font: 12px/12px @sansFontFamily;
+    a{
+      width: 20%;
+      display: block;
+      float: left;
+      padding-top: 7px;
+      height: 37px;
+      border-right:1px solid #d5d2ca;
+      .box-sizing(border-box);
+      &:last-child{
+        border: 0;
       }
     }
   }
