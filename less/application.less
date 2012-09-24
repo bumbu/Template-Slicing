@@ -1,11 +1,16 @@
 @import "variables.less";
 @import "mixins.less";
 @import "utilities.less";
+
+@import "buttons.less";
+@import "forms.less";
+
 @import "responsive-utilities.less";
 @import "grid.less";
 
 body{
   background: @grayDark;
+  font: @baseFontSize @baseFontFamily;
   .container{
     background: @white;
     margin: 0 auto;
@@ -15,4 +20,45 @@ body{
 header.container{
   background: url(../img/bg-header.png) 0 0 repeat-x;
   height:116px;
+
+  a.logo{
+    display: block;
+    margin: 32px 0 0 0;
+  }
+
+  .input-append{
+    margin-top: 28px;
+    input{
+      border-right: 0;
+      .box-shadow(inset 1px 1px 2px @inputShadow,inset 1px -1px 2px @inputShadow);
+    }
+    .btn:last-child {
+      border-left: 0;
+      background: @white;
+      padding: 3px 10px 5px;
+      .box-shadow(inset -1px 1px 2px @inputShadow,inset -1px -1px 2px @inputShadow);
+      border-color: @btnBorder;
+    }
+  }
+
+  .nav-utility{
+    display: block;
+    margin-top: 20px;
+    li{
+      display: block;
+      float: left;
+      margin: 0 8px 0 0;
+      a{
+        background: url('../img/square-orange.gif') 0 50% no-repeat;
+        padding-left: 13px;
+        &:before{
+          content:"";
+          width: 7px;
+          height: 7px;
+          display:block;
+          background: url('../img/square-orange.gif') 0 0 no-repeat;
+        }
+      }
+    }
+  }
 }
