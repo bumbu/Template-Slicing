@@ -89,3 +89,53 @@ header.container{
     }
   }
 }
+
+#carousel{
+  height: 230px;
+  padding: 0 0 15px;
+  background: url('../img/bg-header.png') 0 -163px repeat-x;
+  .carousel{
+    display: none;
+    position: relative;
+
+    &.active{
+      display: block;
+    }
+
+    img,
+    .span6{
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+    .span6{
+      margin-left: 50%;
+
+      h1.carousel-headline{
+        font: 32px @sansFontFamily;
+        letter-spacing: 0.2px;
+        margin: 33px 0 0;
+        height: 120px;
+      }
+      a.carousel-action{
+        display: block;
+        float: left;
+        margin-top: 8px;
+        padding: 0 50px 0 0;
+        background: url('../img/icon-arrow-right-dark.png') 100% 50% no-repeat;
+        font: 12px @sansFontFamily;
+      }
+      .carousel-nav{
+        display: block;
+        margin: 44px 0 0;
+        padding: 0;
+        li{
+          display: inline-block;
+          margin:0 3px 0 0;
+        }
+      }
+    }
+  }
+}

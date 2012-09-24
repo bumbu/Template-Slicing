@@ -29,6 +29,10 @@
   position: fixed;
 }
 
+a{
+  cursor: pointer;
+}
+
 .vertical-space{
   margin-left: 20px !important;
   margin-right: 20px !important;
@@ -45,8 +49,11 @@
   }
 
   &.icon-dot{
+    width: 6px;
+    height: 6px;
+    background: url('../img/icon-bullet.png') 0 0 no-repeat;
     &.active{
-
+      background: url('../img/icon-bullet-active.png') 0 0 no-repeat;
     }
   }
 }
@@ -99,15 +106,16 @@
   color: @linkColor;
   text-transform: uppercase;
   letter-spacing: 1px;
-  a{
-    text-decoration: none;
+}
+
+a.carousel-action{
+  text-decoration: none;
+  color: @linkColor;
+  &:hover{
+    color: #8a2346;
+  }
+  &:visited{
     color: @linkColor;
-    &:hover{
-      color: #8a2346;
-    }
-    &:visited{
-      color: @linkColor;
-    }
   }
 }
 
