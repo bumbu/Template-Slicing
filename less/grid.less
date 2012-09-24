@@ -6,8 +6,9 @@
 // Fixed (940px)
 #grid > .core(@gridColumnWidth, @gridGutterWidth);
 
-// Reset utility classes due to specificity
-[class*="span"].hide,
-.row-fluid [class*="span"].hide {
-  display: none;
+.half{
+  width: 49.99999999%;
+  .box-sizing(border-box);
+  border-right: 1px solid @grayLight;
+  float: left;
 }
