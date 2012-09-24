@@ -9,21 +9,25 @@
 
 // Colors
 // -------------------------
-@white:                     #ffffff;
-@grayLight:                 #eae8e4;
-@grayDark:                  #474544;
+@white:                 #ffffff;
+@gray:                  #555;
+@grayLight:             #eae8e4;
+@grayLighter:           #eae8e4;
+@grayDark:              #474544;
+@grayDarker:            #222;
+@orange:                #f89406;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             #595857;
+@linkColorHover:        #983959;
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        Arial, "Helvetica Neue", Helvetica, sans-serif;
+@serifFontFamily:       Times, "Times New Roman", Georgia, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
@@ -33,11 +37,48 @@
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsColor:         #8a2346; // empty to use BS default, @textColor
 
 // Hr border color
 // -------------------------
 @hrBorder:                @grayLight;
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #e2dfd9;
+@inputBorderRadius:             14px;
+@inputShadow:                   #e2dfd9;
+@inputDisabledBackground:       @grayLight;
+@formActionsBackground:         #f5f5f5;
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #e2dfd9;
+
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+// Horizontal forms & lists
+// -------------------------
+@horizontalComponentOffset:       180px;
 
 
 // GRID
