@@ -3,7 +3,9 @@
 @import "utilities.less";
 
 @import "buttons.less";
+@import "button-groups.less";
 @import "forms.less";
+@import "navs.less";
 
 @import "responsive-utilities.less";
 @import "grid.less";
@@ -225,6 +227,111 @@ h3.subhead{
       padding: 0 0 0 10px;
       margin: 0;
       width: 99px
+    }
+  }
+}
+
+#contaier-contacts{
+  padding-top: 56px;
+  padding-bottom: 58px;
+
+  .subhead{
+    height: 35px;
+  }
+
+  .span4{
+    border-top: 1px dotted @grayLight;
+    h3{
+      padding-top: 2px;
+    }
+  }
+
+  .nav-tabs{
+    padding: 0;
+    margin: 0;
+    height: 36px;
+
+    // tabs
+    li{
+      width: 50%;
+      display: inline-block;
+      .box-sizing(border-box);
+      float:left;
+      text-align: center;
+
+      a{
+        background: #d5d2ca;
+        .border-radius(0);
+        border: 0;
+        border-bottom: 1px solid @white;
+        border-left: 1px solid #e4e2dc;
+        border-right: 1px solid #e4e2dc;
+        .box-shadow(inset 0 -1px 0 #bbb6ab)
+      }
+
+      &.active a,
+      &.active a:hover{
+        background: @grayBox;
+        border: 0;
+        border-bottom: 1px solid @grayBox;
+        .box-shadow(none);
+      }
+
+      &:first-child a{
+        .border-top-left-radius(4px);
+        border-left: 0;
+      }
+      &:last-child a{
+        .border-top-right-radius(4px);
+        border-right: 0;
+      }
+
+      &.active:first-child a{
+        border-right: 1px solid #b2ada0;
+      }
+      &.active:last-child a{
+        border-left: 1px solid #b2ada0;
+      }
+    }
+  }
+
+  .tab-pane{
+    padding: 20px;
+  }
+
+  .btn-group{
+    .btn,
+    .btn:hover{
+      border-color: #dfddd7;
+      #gradient > .vertical(#fefefe, #e9e7e4);
+      padding:10px 14px;
+      background-position: 0 0;
+      font: 10px @sansFontFamily;
+      color: @linkColor;
+      width: 191px;
+      text-align: left;
+    }
+    .btn.dropdown-toggle{
+      background: @orange;
+      border: 1px solid @orange;
+      background-image: none;
+      .box-shadow(none);
+      padding: 8px 11px 11px 10px;
+      width: auto;
+    }
+  }
+
+  .bullet-text{
+    margin: 0;
+    padding: 14px 0 0;
+    display: block;
+    li{
+      display: block;
+      padding: 0 0 0 11px;
+      background: url('../img/icon-list-dot.png') 0 50% no-repeat;
+      &.red{
+        color: #993959;
+      }
     }
   }
 }

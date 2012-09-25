@@ -147,30 +147,6 @@ input[type="button"] {
   border-color: #c5c5c5;
   border-color: rgba(0,0,0,.15) rgba(0,0,0,.15) rgba(0,0,0,.25);
 }
-.btn-primary {
-  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
-}
-// Warning appears are orange
-.btn-warning {
-  .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
-}
-// Danger and error appear as red
-.btn-danger {
-  .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
-}
-// Success appears as green
-.btn-success {
-  .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
-}
-// Info appears as a neutral blue
-.btn-info {
-  .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
-}
-// Inverse appears as dark gray
-.btn-inverse {
-  .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
-}
-
 
 // Cross-browser Jank
 // --------------------------------------------------
@@ -203,29 +179,23 @@ input[type="submit"].btn {
 }
 
 
-// Link buttons
+// Full/action buttons
 // --------------------------------------------------
 
-// Make a button look and behave like a link
-.btn-link,
-.btn-link:active,
-.btn-link[disabled] {
-  background-color: transparent;
-  background-image: none;
-  .box-shadow(none);
-}
-.btn-link {
-  border-color: transparent;
-  cursor: pointer;
-  color: @linkColor;
-  .border-radius(0);
-}
-.btn-link:hover {
-  color: @linkColorHover;
-  text-decoration: underline;
-  background-color: transparent;
-}
-.btn-link[disabled]:hover {
-  color: @grayDark;
-  text-decoration: none;
+.btn-full{
+  display: block;
+  #gradient > .vertical(#fbfafa, #e6e4df);
+  padding: 8px 0 8px 8px;
+  .border-radius(4px);
+  border-bottom: 1px solid #b2b2b2;
+  &.action{
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      padding-right: 7px;
+      background: url('../img/square-orange.gif') 2px 0 no-repeat;
+    }      
+  }
 }

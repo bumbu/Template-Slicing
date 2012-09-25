@@ -46,7 +46,7 @@ a{
 }
 
 .box{
-  background: #f9f9f8;
+  background: @grayBox;
   .border-radius(4px);
   border-bottom: 1px solid #d5d2ca;
 }
@@ -71,6 +71,12 @@ a{
     &.active{
       background: url('../img/icon-bullet-active.png') 0 0 no-repeat;
     }
+  }
+
+  &.icon-pointers-vertical{
+    width: 10px;
+    height: 13px;
+    background: url('../img/icon-pointers-vertical.png') 50% 0 no-repeat;
   }
 }
 
