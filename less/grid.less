@@ -3,8 +3,18 @@
 // --------------------------------------------------
 
 
-// Fixed (940px)
-#grid > .core(@gridColumnWidth, @gridGutterWidth);
+// Fixed (960px)
+#grid > .core(@gridColumnWidth, @gridGutterWidth, @gridOuterWidth, @gridRowWidth);
+
+// Tablets & small desktops only
+@media (min-width: 768px) and (max-width: 959px) {
+  #grid > .core(@gridColumnWidth768, @gridGutterWidth768, @gridOuterWidth768, @gridRowWidth768);
+}
+
+// Phones only
+@media (max-width: 767px) {
+
+}
 
 .half{
   width: 49.99999999%;

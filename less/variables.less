@@ -86,17 +86,21 @@
 // --------------------------------------------------
 
 
-// Default 940px grid
-// -------------------------
+
 @gridColumns:             12;
+
+// Default 960px grid
+// -------------------------
 @gridColumnWidth:         48px;
 @gridGutterWidth:         24px;
-@gridRowWidth:            960px;
+@gridOuterWidth:          60px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1)) + (@gridOuterWidth * 2);
 
-// 768px-979px
-@gridColumnWidth768:      42px;
+// 768px-959px
+@gridColumnWidth768:      38px;
 @gridGutterWidth768:      20px;
-@gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * (@gridColumns - 1));
+@gridOuterWidth768:       46px;
+@gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * (@gridColumns - 1)) + (@gridOuterWidth768 * 2);
 
 
 // Fluid grid
