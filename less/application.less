@@ -91,6 +91,7 @@ header.container{
   height: 230px;
   padding: 0 0 15px;
   background: url('../img/bg-header.png') 0 -163px repeat-x;
+  overflow: hidden;
   .carousel{
     display: none;
     position: relative;
@@ -100,15 +101,20 @@ header.container{
     }
 
     img,
-    .span6{
+    .carousel-body{
       position: absolute;
       display: block;
-      top: 0;
-      left: 0;
+      top: 0;      
     }
 
-    .span6{
+    img{
+      right: 0;
+    }
+
+    .carousel-body{
+      left: 0;
       margin-left: 50%;
+      width: 420px;
 
       h1.carousel-headline{
         font: 32px @sansFontFamily;
@@ -156,9 +162,9 @@ h3.subhead{
       height: 270px;
     }
 
-    .image-frame img{
-      display: block;
+    .image-frame{
       margin: 10px;
+      overflow: hidden;
     }
 
     .spotlight-feature{
@@ -228,7 +234,7 @@ h3.subhead{
       float: left;
       padding: 0 0 0 10px;
       margin: 0;
-      width: 99px
+      width: 99px;
     }
   }
 }
@@ -363,8 +369,8 @@ footer.container{
   }
 
   .legal-logo{
-    display: block;
-    padding: 21px 0 0;
+    white-space: nowrap;
+    font-size: 11px;
   }
 
   .footer-legal{
@@ -373,3 +379,5 @@ footer.container{
     }
   }
 }
+
+@import "responsive-application";
