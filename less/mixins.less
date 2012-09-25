@@ -563,7 +563,7 @@
 // The Grid
 #grid {
 
-  .core (@gridColumnWidth, @gridGutterWidth) {
+  .core (@gridColumnWidth, @gridGutterWidth, @gridOuterWidth: 60px, @gridRowWidth: 960px) {
     // spans
     .spanX (@index) when (@index > 0) {
       (~".span@{index}") { .span(@index); }
@@ -579,7 +579,7 @@
       width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
 
       &:first-child{
-        margin-left: 60px;
+        margin-left: @gridOuterWidth;
       }
 
       &:last-child{
@@ -590,11 +590,11 @@
         width: (@gridColumnWidth + @gridGutterWidth) * @columns;
         margin-left: 0;
         &:first-child{
-          width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + 60;
+          width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + @gridOuterWidth;
           margin-left: 0;
         }
         &:last-child{
-          width: ((@gridColumnWidth + @gridGutterWidth) * @columns) + 60;
+          width: ((@gridColumnWidth + @gridGutterWidth) * @columns) + @gridOuterWidth;
         }
       }      
     }
