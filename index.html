@@ -31,7 +31,7 @@
         <div class="span5 not-padded">
           <a href="#" class="logo vertical-space"><img src="img/logo.png" alt="Loyola Medicine"></a>
         </div>
-        <div class="span7 not-padded">
+        <div class="span7 not-padded hidden-phone">
           <div class="input-append pull-right vertical-space">
             <input class="span4" size="16" type="text"><button class="btn"><i class="icon icon-search"></i></button><!-- <span class="add-on"><i class="icon icon-search"></i></span> -->
           </div>
@@ -47,7 +47,13 @@
 
     <!-- navigation start -->
     <div class="container" id="top-navigation">
-      <nav class="row nav">
+      <div class="btn-group visible-phone">
+        <button class="btn action">Home</button>
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+          <i class="icon icon-pointers-vertical"></i>
+        </button>
+      </div>
+      <nav class="row nav hidden-phone">
         <a>Medical<br />services</a>
         <a>Health<br />guide</a>
         <a>Patient<br />information</a>
@@ -60,7 +66,7 @@
     <!-- carousel start -->
     <div class="container" id="carousel">
       <div class="row carousel active">
-        <img src="img/carousel1.jpg" alt="carousel">
+        <img src="img/carousel1.jpg" alt="carousel" class="hidden-phone">
         <div class="carousel-body">
           <h1 class="carousel-headline">Consistently ranked in Top 50 hospitals by US News &amp; World Report</h1>
           <a href="#" class="carousel-action">BROWSE ALL MEDICAL SERVICES</a>
@@ -103,7 +109,7 @@
             </div>
           </div>
         </div>
-        <div class="span4">
+        <div class="span4" id="help">
           <h3 class="subhead">HOW <i>may we</i> HELP YOU?</h3>
           <div class="box">
             <ul class="action-list">
@@ -229,7 +235,7 @@
         </div>
         <div class="span3">
           <h6 class="footer-subhead legal-logo">A member of <i class="icon icon-legal-logo"></i> Trinity Health</h6>
-          <p class="footer-legal">Copyright © 2012 Loyola University<br />Health System. All rights reserved.</p>
+          <p class="footer-legal">Copyright © 2012 Loyola University Health System. All rights reserved.</p>
           <p class="footer-legal">
             <a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a>
           </p>
