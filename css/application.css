@@ -431,6 +431,8 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-full {
   display: block;
+  color: #595857;
+  text-shadow: none;
   background-color: #f3f1ef;
   background-image: -moz-linear-gradient(top, #fbfafa, #e6e4df);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfafa), to(#e6e4df));
@@ -439,11 +441,30 @@ input[type="submit"].btn.btn-mini {
   background-image: linear-gradient(to bottom, #fbfafa, #e6e4df);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='argb(#fbfafa)', endColorstr='argb(#e6e4df)', GradientType=0);
+  border-color: #e6e4df #e6e4df #c4c0b4;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e4df;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   padding: 8px 0 8px 8px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   border-bottom: 1px solid #b2b2b2;
+}
+.btn-full:hover,
+.btn-full:active,
+.btn-full.active,
+.btn-full.disabled,
+.btn-full[disabled] {
+  color: #595857;
+  background-color: #e6e4df;
+  *background-color: #dbd8d1;
+}
+.btn-full:active,
+.btn-full.active {
+  background-color: #d0ccc2 \9;
 }
 .btn-full.action:before {
   content: "";
@@ -1999,6 +2020,14 @@ legend + .control-group {
     border: 0;
   }
 }
+.lt-ie8 #contaier-spotlight .box .half {
+  width: 49%;
+}
+.lt-ie8 #carousel .carousel .carousel-body .carousel-nav li {
+  display: block;
+  float: left;
+  margin: 0 6px 0 0;
+}
 body {
   background: #474544;
   font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -2023,14 +2052,16 @@ header.container a.logo {
 header.container .input-append {
   margin-top: 28px;
 }
-header.container .input-append input {
+header.container .input-append input,
+header.container .input-append input[type="text"] {
   border-right: 0;
   background: #fbfaf7;
   -webkit-box-shadow: inset 1px 1px 2px #e2dfd9, inset 1px -1px 2px #e2dfd9;
   -moz-box-shadow: inset 1px 1px 2px #e2dfd9, inset 1px -1px 2px #e2dfd9;
   box-shadow: inset 1px 1px 2px #e2dfd9, inset 1px -1px 2px #e2dfd9;
+  border-color: #e2dfd9;
 }
-header.container .input-append .btn:last-child {
+header.container .input-append .btn {
   border-left: 0;
   background: #fbfaf7;
   padding: 3px 10px 5px;
@@ -2140,6 +2171,9 @@ h3.subhead {
 }
 #contaier-spotlight #news .box .half {
   height: 270px;
+}
+#contaier-spotlight #news .box .half:last-child {
+  border-width: 0;
 }
 #contaier-spotlight #news .image-frame {
   margin: 10px;
@@ -2285,6 +2319,8 @@ h3.subhead {
 #contaier-contacts .btn-group .btn,
 #contaier-contacts .btn-group .btn:hover {
   border-color: #dfddd7;
+  color: #595857;
+  text-shadow: none;
   background-color: #f6f5f4;
   background-image: -moz-linear-gradient(top, #fefefe, #e9e7e4);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#e9e7e4));
@@ -2293,12 +2329,38 @@ h3.subhead {
   background-image: linear-gradient(to bottom, #fefefe, #e9e7e4);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='argb(#fefefe)', endColorstr='argb(#e9e7e4)', GradientType=0);
+  border-color: #e9e7e4 #e9e7e4 #c7c2ba;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e9e7e4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   padding: 10px 14px;
   background-position: 0 0;
   font: 10px Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #595857;
   width: 191px;
   text-align: left;
+}
+#contaier-contacts .btn-group .btn:hover,
+#contaier-contacts .btn-group .btn:hover:hover,
+#contaier-contacts .btn-group .btn:active,
+#contaier-contacts .btn-group .btn:hover:active,
+#contaier-contacts .btn-group .btn.active,
+#contaier-contacts .btn-group .btn:hover.active,
+#contaier-contacts .btn-group .btn.disabled,
+#contaier-contacts .btn-group .btn:hover.disabled,
+#contaier-contacts .btn-group .btn[disabled],
+#contaier-contacts .btn-group .btn:hover[disabled] {
+  color: #595857;
+  background-color: #e9e7e4;
+  *background-color: #dedbd6;
+}
+#contaier-contacts .btn-group .btn:active,
+#contaier-contacts .btn-group .btn:hover:active,
+#contaier-contacts .btn-group .btn.active,
+#contaier-contacts .btn-group .btn:hover.active {
+  background-color: #d2cec8 \9;
 }
 #contaier-contacts .btn-group .btn.dropdown-toggle {
   background: #eaaa00;
