@@ -2,6 +2,12 @@
 // Grid system
 // --------------------------------------------------
 
+.half{
+  width: 49.99999999%;
+  .box-sizing(border-box);
+  border-right: 1px solid @grayLight;
+  float: left;
+}
 
 // Fixed (960px)
 #grid > .core(@gridColumnWidth, @gridGutterWidth, @gridOuterWidth, @gridRowWidth);
@@ -13,12 +19,30 @@
 
 // Phones only
 @media (max-width: 767px) {
-
-}
-
-.half{
-  width: 49.99999999%;
-  .box-sizing(border-box);
-  border-right: 1px solid @grayLight;
-  float: left;
+  .container,
+  .row{
+    width: auto;
+  }
+  // Make all grid-sized elements block level again
+  [class*="span"],
+  [class*="span"].not-padded,
+  [class*="span"]:first-child,
+  [class*="span"]:last-child,
+  [class*="span"].not-padded:first-child,
+  [class*="span"].not-padded:last-child,
+  .half
+  {
+    float: none;
+    display: block;
+    width: auto;
+    margin-left: 0;
+    .box-sizing(border-box);
+  }
+  .span12{
+    width: auto;
+    .box-sizing(border-box);
+  }
+  .half{
+    border: 0;
+  }
 }
