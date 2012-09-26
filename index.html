@@ -1,66 +1,247 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Template Slicing by bumbu</title>
+    <meta charset='utf-8'>
+    <title>Main page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/application.css" />
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script src="js/less-1.3.0.min.js"></script>
+    <script src="js/modernizr-2.6.1-respond-1.1.0.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Template Slicing</h1>
-        <p>Template slicing from PSD and AI to HTML, CSS and JS</p>
+    <!-- head start -->
+    <header class="container">
+      <!-- alert start -->
+      <div class="alert hide">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <p>
+          <a href="#">FLOOD WARNING:</a> THE LOYOLA GOTTLIEB CAMPUS WILL BE CLOSED TODAY. <a href="#">FIND AN ALTERNATE LOCATION.</a>
+        </p>
+      </div>
+      <!-- alert end -->
+      <div class="row">
+        <div class="span5 not-padded">
+          <a href="#" class="logo vertical-space"><img src="img/logo.png" alt="Loyola Medicine"></a>
+        </div>
+        <div class="span7 not-padded hidden-phone">
+          <div class="input-append pull-right vertical-space">
+            <input class="span4" size="16" type="text"><button class="btn"><i class="icon icon-search"></i></button><!-- <span class="add-on"><i class="icon icon-search"></i></span> -->
+          </div>
+          <ul class="nav-utility clearfix pull-right vertical-space">
+            <li><a href="#">Find a doctor</a></li>
+            <li><a href="#">Request appointment</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- head end -->
 
-        <p class="view"><a href="https://github.com/bumbu/Template-PSDorAI-to-HTMLnCSSnJS">View the Project on GitHub <small>bumbu/Template-PSDorAI-to-HTMLnCSSnJS</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/bumbu/Template-PSDorAI-to-HTMLnCSSnJS/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/bumbu/Template-PSDorAI-to-HTMLnCSSnJS/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/bumbu/Template-PSDorAI-to-HTMLnCSSnJS">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/bumbu">bumbu</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <!-- navigation start -->
+    <div class="container" id="top-navigation">
+      <div class="btn-group visible-phone">
+        <button class="btn action">Home</button>
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+          <i class="icon icon-pointers-vertical"></i>
+        </button>
+      </div>
+      <nav class="row nav hidden-phone">
+        <a>Medical<br />services</a>
+        <a>Health<br />guide</a>
+        <a>Patient<br />information</a>
+        <a>Visit<br />us</a>
+        <a>For health<br />professionals</a>
+      </nav>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!-- navigation end -->
+
+    <!-- carousel start -->
+    <div class="container" id="carousel">
+      <div class="row carousel active">
+        <img src="img/carousel1.jpg" alt="carousel" class="hidden-phone">
+        <div class="carousel-body">
+          <h1 class="carousel-headline">Consistently ranked in Top 50 hospitals by US News &amp; World Report</h1>
+          <a href="#" class="carousel-action">BROWSE ALL MEDICAL SERVICES</a>
+          <ul class="carousel-nav clearfix">
+            <li><a href="#"><i class="icon icon-dot active"></i></a></li>
+            <li><a href="#"><i class="icon icon-dot"></i></a></li>
+            <li><a href="#"><i class="icon icon-dot"></i></a></li>
+            <li><a href="#"><i class="icon icon-dot"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+
+    <!-- section1 start -->
+    <div class="container" id="contaier-spotlight">
+      <div class="row">
+        <div class="span8" id="news">
+          <a href="#" class="action pull-right">News archive</a>
+          <h3 class="subhead">In <i>the</i> spotlight</h3>
+          <div class="box clearfix">
+            <div class="half">
+              <div class="image-frame">
+                <img src="img/spotlight.jpg" alt="">
+              </div>
+              <p class="spotlight-feature vertical-space">Loyola clinical trial to test nonurgical alternative to <i class="nowrap">open-heart</i> valve operation</p>
+            </div>
+            <div class="half">
+              <div class="vertical-space">
+                <p class="spotlight-news">
+                  Community Heart Fair and Cardiologist Lectures
+                </p>
+                <p class="spotlight-news">
+                  Loyola’s On-Site Cardiology Team Dramatically Improves Care for Heart Attack Patients
+                </p>
+                <p class="spotlight-news">
+                  Spring is an Ideal Time to Take Care of Varicose Veins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span4" id="help">
+          <h3 class="subhead">HOW <i>may we</i> HELP YOU?</h3>
+          <div class="box">
+            <ul class="action-list">
+              <li><a href="#" class="action">FIND A DOCTOR</a></li>
+              <li><a href="#" class="action">REQUEST APPOINTMENT</a></li>
+              <li><a href="#" class="action">MEDICAL SERVICES</a></li>
+              <li><a href="#" class="action">PATIENT INFORMATION</a></li>
+              <li><a href="#" class="action">VISIT US</a></li>
+              <li><a href="#" class="action">REFER A PATIENT</a></li>
+              <li><a href="#" class="action">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section1 end -->
+
+    <!-- section2 start -->
+    <div class="container" id="contaier-did-you-know">
+      <div class="row">
+        <div class="span12">
+          <h3 class="subhead">DID <i>you</i> KNOW?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span3 did-you-know">
+          <img src="img/did-you-know1.jpg" alt="" width="80" height="60">
+          <p>Loyola is a state leader in bone marrow transplantation</p>
+        </div>
+        <div class="span3 did-you-know">
+          <img src="img/did-you-know2.jpg" alt="" width="80" height="60">
+          <p>Loyola is Chicago’s only Level 1 Trauma Center</p>
+        </div>
+        <div class="span3 did-you-know">
+          <img src="img/did-you-know3.jpg" alt="" width="80" height="60">
+          <p>Loyola is the only academic medical center in western suburbs</p>
+        </div>
+        <div class="span3 did-you-know">
+          <img src="img/did-you-know4.jpg" alt="" width="80" height="60">
+          <p>Loyola is a leader in heart disease, cancer and transplants</p>
+        </div>
+      </div>
+    </div>
+    <!-- section2 end -->
+
+    <!-- section3 start -->
+    <div class="container" id="contaier-contacts">
+      <div class="row rows-top-dotted">
+        <div class="span4">
+          <h3 class="subhead">FIND a DOCTOR</h3>
+            <div class="box">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#speciality" class="action" data-toggle="tab">SPECIALTY</a></li>
+                <li><a href="#keyword" class="action" data-toggle="tab">KEYWORD</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane active" id="speciality">
+                  <div class="btn-group">
+                    <button class="btn action">FIND A DOCTOR</button>
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-pointers-vertical"></i>
+                    </button>
+                    <ul class="dropdown-menu hide">
+                      <!-- dropdown menu links -->
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="keyword">empty here</div>
+              </div>
+            </div>
+        </div>
+        <div class="span4">
+          <h3 class="subhead">REQUEST APPOINTMENT</h3>
+          <a href="#" class="action btn-full">REQUEST APPOINTMENT</a>
+          <ul class="bullet-text">
+            <li>For adults call (888) 584-7888</li>
+            <li>For children (877) 216-5437</li>
+          </ul>
+        </div>
+        <div class="span4">
+          <h3 class="subhead">GIVE to LOYOLA</h3>
+          <a href="#" class="action btn-full">GIVE ONLINE NOW</a>
+          <ul class="bullet-text">
+            <li class="red">Areas to Support</li>
+            <li class="red">Ways to Give</li>
+            <li>Call (888) 584-7888 x63201</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- section end -->
+
+    <footer class="container">
+      <div class="row">
+        <div class="span3">
+          <h6 class="footer-subhead">MORE INFORMATION</h6>
+          <ul class="footer-text">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Giving to Loyola</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <h6 class="footer-subhead">SEE ALSO</h6>
+          <ul class="footer-text">
+            <li><a href="#">Gottlieb Hospital</a></li>
+            <li><a href="#">Loyola Health Sciences</a></li>
+            <li><a href="#">Loyola University Chicago</a></li>
+            <li><a href="#">Employee Portal</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <h6 class="footer-subhead">STAY INFORMED</h6>
+          <ul class="footer-text">
+            <li><a href="#">Loyola Newswire</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <h6 class="footer-subhead legal-logo">A member of <i class="icon icon-legal-logo"></i> Trinity Health</h6>
+          <p class="footer-legal">Copyright © 2012 Loyola University Health System. All rights reserved.</p>
+          <p class="footer-legal">
+            <a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap-tab.js"></script>
+  	<script src="js/application.js"></script>
   </body>
 </html>
