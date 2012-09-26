@@ -10,10 +10,10 @@ Compiled version of sliced page is [here](http://bumbu.github.com/Template-Slici
 Used technologies
 ----------
 
-* (Less css preprocessor)[http://lesscss.org/] 
-* (HTML5 Boilerplate)[http://html5boilerplate.com/]
-* few (Twitter Bootstrap)[http://twitter.github.com/bootstrap/] .less sources
-* (jQuery)[http://jquery.com/]
+* [Less css preprocessor](http://lesscss.org/])
+* [HTML5 Boilerplate](http://html5boilerplate.com/)
+* few [Twitter Bootstrap](http://twitter.github.com/bootstrap/) .less sources
+* [jQuery](http://jquery.com/)
 
 
 Tested browsers
