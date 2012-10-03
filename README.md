@@ -47,7 +47,6 @@ ToDos
 Versions
 ----------
 ### v0.4 (in dev)
-* Added mobile template framework
 
 ### v0.3
 * Added mobile template framework
