@@ -34,7 +34,6 @@ Browsers to fix
 ToDos
 -----------
 
-* icon sprites
 * header submenu (html and js)
 * carousel (js)
 * selects (js)
