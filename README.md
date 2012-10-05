@@ -34,10 +34,9 @@ Browsers to fix
 ToDos
 -----------
 
-* header submenu (html and js)
-* carousel (js)
 * selects (js)
-* alert (html and js)
+* carousel (js)
+* header submenu (html and js)
 * mobile dropdown menu (html and js)
 * use fonts as in AI
 * add Licence

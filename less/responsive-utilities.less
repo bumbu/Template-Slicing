@@ -29,6 +29,11 @@
   .visible-tablet    { display: inherit !important; }
   // Hide
   .hidden-tablet     { display: none !important; }
+
+  .alert{
+    width: 648px;
+    margin: 0 0 0 -324px;
+  }
 }
 
 // Phones only
@@ -40,4 +45,10 @@
   .visible-phone     { display: inherit !important; } // Use inherit to restore previous behavior
   // Hide
   .hidden-phone      { display: none !important; }
+
+  .alert{
+    width: 100%;
+    margin: 0 0 0 -50%;
+    .border-bottom-radius(0);
+  }
 }
